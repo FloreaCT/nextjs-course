@@ -1,3 +1,9 @@
+export const metadata = {
+  title: {
+    absolute: "Testing absolute title metadata",
+  },
+};
+
 export default function Blog() {
   return (
     <div>

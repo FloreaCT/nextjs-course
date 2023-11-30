@@ -1,3 +1,15 @@
+export const generateMetadata = async ({ params }) => {
+  const title = await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`for Iphone ${params.productId}`);
+    }, 100);
+  });
+
+  return {
+    title: `Product Details ${title}`,
+  };
+};
+
 export default function ProductDetails({ params }) {
   return (
     <div>
